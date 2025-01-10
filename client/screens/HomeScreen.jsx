@@ -195,7 +195,7 @@ export default HomeScreen = ({ navigation }) => {
           <ScrollView keyboardShouldPersistTaps="handled">
             <Box flexDir="row" mt="3">
               <Text style={styles.subtitleText}>
-                {`Today is ${moment(new Date()).format("MMM Do")},`}
+                {`Bugün günlerden ${moment(new Date()).format("MMM Do")},`}
               </Text>
               {isLoading === LOADING.FULFILLED && (
                 <TouchableOpacity

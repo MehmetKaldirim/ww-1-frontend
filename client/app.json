@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "naziceninhavasi",
-    "slug": "naziceninhavasi",
+    "name": "havadurumu",
+    "slug": "havadurumu",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/app-logo.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splash-screen.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -31,18 +31,19 @@
     },
     "extra": {
       "eas": {
-        "projectId": "ba29dd23-7cd7-4a2f-b962-b7f73f077ee8"
+        "projectId": "c50de48b-acf4-423a-bfa5-782f91b0f945"
       }
     },
     "runtimeVersion": {
       "policy": "sdkVersion"
     },
     "updates": {
-      "url": "https://u.expo.dev/ba29dd23-7cd7-4a2f-b962-b7f73f077ee8"
+      "url": "https://u.expo.dev/c50de48b-acf4-423a-bfa5-782f91b0f945"
     },
     "sdkVersion": "52.0.0",
     "plugins": [
       "expo-secure-store"
-    ]
+    ],
+    "owner": "mathweb"
   }
 }

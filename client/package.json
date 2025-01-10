@@ -16,7 +16,7 @@
     "@react-navigation/native-stack": "^6.9.12",
     "@reduxjs/toolkit": "^1.9.5",
     "axios": "^1.4.0",
-    "eas-cli": "^14.2.0",
+    "eas-cli": "^14.4.0",
     "expo": "^52.0.23",
     "expo-camera": "~16.0.10",
     "expo-image-manipulator": "~13.0.5",
