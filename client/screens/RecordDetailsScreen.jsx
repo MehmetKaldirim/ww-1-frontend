@@ -128,9 +128,9 @@ const RecordDetailsScreen = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <ScreenTitle title={`Hey, ${userName}! How are you?`} />
+      <ScreenTitle title={`Hey, ${userName}! Nasilsin?`} />
       <Text pt="4" color="primary.100" fontSize="20" textAlign="center">
-        {`It was ${moment(date).format("MMM, Do")}`}
+        {`Bugün ${moment(date).format("MMM, Do")}`}
       </Text>
       {isPreviewMode ? (
         renderPreview()
@@ -139,7 +139,7 @@ const RecordDetailsScreen = () => {
           <View style={styles.infoSection}>
             <WeatherSection weatherData={weatherData} />
             <Text mt="2" color="primary.50" fontSize="18">
-              Your outfit on this day:
+              Bu havada ne giysem!!!:
             </Text>
             <Box
               mt="2"
@@ -153,7 +153,7 @@ const RecordDetailsScreen = () => {
               shadowRadius={4}
             >
               <Text textAlign="center" color="primary.50" fontSize="17">
-                {description || "You have not added anything here."}
+                {description || "Bu kayitta ne giyeceginizi eklememissiniz"}
               </Text>
             </Box>
           </View>
@@ -212,10 +212,9 @@ const RecordDetailsScreen = () => {
       >
         <AlertDialog.Content color="primary.150">
           <AlertDialog.CloseButton />
-          <AlertDialog.Header>Delete Record</AlertDialog.Header>
+          <AlertDialog.Header>Kayit Silme</AlertDialog.Header>
           <AlertDialog.Body>
-            This will remove this record. This action cannot be reversed. Are
-            you sure?
+            Kayiti Siliyorsunuz, bu geri döndürülemez! Emin misin?
           </AlertDialog.Body>
           <AlertDialog.Footer>
             <Button.Group space={2}>
@@ -225,7 +224,7 @@ const RecordDetailsScreen = () => {
                 onPress={toggleAlert}
                 ref={cancelRef}
               >
-                Cancel
+                Iptal
               </Button>
               <Button
                 colorScheme="danger"
@@ -234,7 +233,7 @@ const RecordDetailsScreen = () => {
                   dispatch(removeRecord(_id));
                 }}
               >
-                Delete
+                Sil gitsin
               </Button>
             </Button.Group>
           </AlertDialog.Footer>

@@ -63,7 +63,7 @@ export default HomeScreen = ({ navigation }) => {
       const { width, height } = event.nativeEvent.source.dimensions;
       setImageDimensions({ width, height });
     } else {
-      console.error("Resim boyutları alınamadı:", event);
+      //console.error("Resim boyutları alınamadı:", event);
       setImageDimensions({ width: 1, height: 1 }); // Önleme amaçlı varsayılan değer
     }
   };
@@ -177,7 +177,7 @@ export default HomeScreen = ({ navigation }) => {
         w="90%"
         alignSelf="center"
       >
-        <ScreenTitle title={`Hey ${userName}, nice to meet you!`} />
+        <ScreenTitle title={`Merhaba Güzel  ${userName}...!`} />
         <ButtonIcon
           handleClick={handleSignOut}
           iconPath={require("../assets/icons/logOutIcon.png")}
@@ -203,7 +203,7 @@ export default HomeScreen = ({ navigation }) => {
                     navigation.navigate("Forecast", data?.forecast)
                   }
                 >
-                  <Text style={styles.buttonText}>Check next days!</Text>
+                  <Text style={styles.buttonText}>YARIN HAVA!</Text>
                 </TouchableOpacity>
               )}
             </Box>
@@ -238,7 +238,7 @@ export default HomeScreen = ({ navigation }) => {
                 mt="4"
                 value={description}
                 onChangeText={(text) => setDescription(text)}
-                placeholder="Do you want to remember later in what clothes it was comfortable in this weather? Fill out this form!"
+                placeholder="Bu tür havalarda neler giymen gerektigini hatirlamak istermisin.O zaman Formu doldur!"
                 w="85%"
                 alignSelf="center"
                 rounded="15"

@@ -33,7 +33,12 @@ export const getToken = async () => {
 };
 
 export const removeToken = async () => {
-  return await SecureStore.getItemAsync(TOKEN_KEY);
+  try {
+    await SecureStore.deleteItemAsync(TOKEN_KEY);
+    console.log("Token successfully removed");
+  } catch (e) {
+    console.log("Error removing token:", e);
+  }
 };
 
 apiClient.interceptors.request.use(

@@ -63,9 +63,9 @@ export default function CameraScreen({ navigation }) {
     return (
       <View style={styles.container}>
         <Text style={styles.message}>
-          We need your permission to show the camera
+          Kamerani kulanabilmemiz icin izne ihtiyacimiz var.
         </Text>
-        <Button onPress={requestPermission} title="Grant Permission" />
+        <Button onPress={requestPermission} title="Izin Ver" />
       </View>
     );
   }
@@ -74,9 +74,9 @@ export default function CameraScreen({ navigation }) {
   if (photo) {
     return (
       <View style={styles.container}>
-        <Text style={styles.previewText}>Photo Preview</Text>
-        <Button title="Retake Photo" onPress={() => setPhoto(null)} />
-        <Button title="Save Record" onPress={handleCreateNewRecordWithPhoto} />
+        <Text style={styles.previewText}>Ön Izleme</Text>
+        <Button title="Yeni Foto" onPress={() => setPhoto(null)} />
+        <Button title="Foto Kaydet" onPress={handleCreateNewRecordWithPhoto} />
       </View>
     );
   }
@@ -86,16 +86,16 @@ export default function CameraScreen({ navigation }) {
       <CameraView style={styles.camera} facing={facing} ref={cameraRef}>
         <View style={styles.buttonContainer}>
           <TouchableOpacity style={styles.button} onPress={handleTakePhoto}>
-            <Text style={styles.text}>Take Photo</Text>
+            <Text style={styles.text}>Cek Fotonu Cek</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={toggleCameraFacing}>
-            <Text style={styles.text}>Flip Camera</Text>
+            <Text style={styles.text}>Kamerayi Cevir Kiz</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.button}
             onPress={() => navigation.navigate("Home")}
           >
-            <Text style={styles.text}>Home</Text>
+            <Text style={styles.text}>Ana Sayfa</Text>
           </TouchableOpacity>
         </View>
       </CameraView>
